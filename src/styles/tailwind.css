@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+	@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+	* {
+		font-family: "Lato", sans-serif;
+	}
+
+	.nav {
+		@apply container flex justify-between py-5;
+	}
+
+	.logo {
+		@apply font-secondary font-bold text-3xl;
+	}
+
+	.button {
+		@apply border border-secondary py-3 px-8 tracking-wide text-sm hover:bg-secondary hover:text-white transition-all duration-500;
+	}
+}

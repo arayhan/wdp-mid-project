@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Rayhan</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="index.html" class="logo">Rayhan</a>
+        <button class="relative z-30 bg-white px-8" onclick="handleNavMenu()">
+            <img class="w-7" src="http://cdn.onlinewebfonts.com/svg/img_545657.png" />
+        </button>
+    </nav>
+    <div id="navMenu" class="fixed z-20 left-0 top-0 w-screen h-screen bg-secondary items-center justify-center hidden">
+        <ul class="text-white text-center text-5xl font-light space-y-8 tracking-widest">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BLOG</a></li>
+        </ul>
+    </div>
+    <header class="relative container py-24 mb-10">
+        <div class="relative z-10 space-y-8 py-10">
+            <h1 class="text-6xl md:text-8xl font-secondary font-extrabold">Hello, <br /> I'm Rayhan.</h1>
+            <div class="text-xl md:text-2xl font-light space-y-2">
+                <div>Frontend Developer</div>
+                <div>UI/UIX Designer</div>
+            </div>
+        </div>
+        <img class="md:absolute right-0 top-0 w-3/4 md:h-full object-cover"
+            src="https://malu.im/wp-content/uploads/2018/03/IMG_4104-min.jpg" alt="">
+    </header>
+    <section id="about" class="container space-y-8 py-36">
+        <p style="max-width: 800px;" class="text-2xl font-light">I'm an interaction designer and now based in Berlin. I
+            like to resolve design problems, create smart user interface and imagine useful interaction, focusing on the
+            user-centered design. </p>
+        <button class="button">ABOUT ME</button>
+    </section>
+    <script>
+        function handleNavMenu() {
+            const navMenu = document.querySelector('#navMenu')
+            console.log(navMenu)
+            if (navMenu.classList.contains('flex')) {
+                navMenu.classList.remove('flex')
+                navMenu.classList.add('hidden')
+            } else {
+                navMenu.classList.add('flex')
+                navMenu.classList.remove('hidden')
+            }
+        }
+    </script>
+</body>
+
+</html>
