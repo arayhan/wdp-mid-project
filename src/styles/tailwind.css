@@ -8,16 +8,52 @@
 	* {
 		font-family: "Lato", sans-serif;
 	}
+}
+.nav {
+	@apply container flex justify-between py-5;
+}
 
-	.nav {
-		@apply container flex justify-between py-5;
-	}
+.logo {
+	@apply font-secondary font-bold text-3xl;
+}
 
-	.logo {
-		@apply font-secondary font-bold text-3xl;
-	}
+.button {
+	@apply border border-secondary py-3 px-8 tracking-widest text-sm hover:bg-secondary hover:text-white transition-colors duration-300;
+}
 
-	.button {
-		@apply border border-secondary py-3 px-8 tracking-wide text-sm hover:bg-secondary hover:text-white transition-all duration-500;
-	}
+.button-white {
+	@apply border border-white py-3 px-8 tracking-widest text-white text-xs hover:bg-white hover:text-secondary transition-colors duration-300;
+}
+
+.project-wrapper {
+	@apply grid grid-cols-2 gap-8;
+}
+
+.project-item {
+	height: 500px;
+	@apply relative overflow-hidden;
+}
+
+.project-item .project-item-title {
+	@apply absolute z-10 p-12 w-full h-full text-3xl text-white transition-all;
+}
+
+.project-item .project-item-title p {
+	@apply transform -translate-y-8 opacity-0 transition-all duration-300 font-secondary tracking-wider font-semibold;
+}
+
+.project-item:hover .project-item-title {
+	@apply bg-secondary bg-opacity-50;
+}
+
+.project-item:hover .project-item-title p {
+	@apply -translate-y-0 opacity-100;
+}
+
+.project-item .project-item-thumbnail {
+	@apply w-full h-full object-cover transition-all duration-500;
+}
+
+.project-item:hover .project-item-thumbnail {
+	@apply scale-105;
 }

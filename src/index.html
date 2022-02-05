@@ -34,17 +34,58 @@
         <img class="md:absolute right-0 top-0 w-3/4 md:h-full object-cover"
             src="https://malu.im/wp-content/uploads/2018/03/IMG_4104-min.jpg" alt="">
     </header>
-    <section id="about" class="container space-y-8 py-36">
+    <section id="about" class="container space-y-8 py-52">
         <p style="max-width: 800px;" class="text-2xl font-light">I'm an interaction designer and now based in Berlin. I
             like to resolve design problems, create smart user interface and imagine useful interaction, focusing on the
             user-centered design. </p>
         <button class="button">ABOUT ME</button>
     </section>
+    <section id="project" class="container">
+        <div class="project-wrapper">
+            <div class="project-item">
+                <div class="project-item-title">
+                    <p>WALLSTREET DEVOPS</p>
+                </div>
+                <img class="project-item-thumbnail"
+                    src="https://media-exp1.licdn.com/dms/image/C561BAQE1E_WcHPWicg/company-background_10000/0/1612754306236?e=2159024400&v=beta&t=SCiV6S2Zoo1I1S7VdxWJdcFkmGRl6rCIsq7G4N89YBU"
+                    alt="">
+            </div>
+            <div class="project-item">
+                <div class="project-item-title">
+                    <p>WALLSTREET DEVOPS</p>
+                </div>
+                <img class="project-item-thumbnail"
+                    src="https://media-exp1.licdn.com/dms/image/C561BAQE1E_WcHPWicg/company-background_10000/0/1612754306236?e=2159024400&v=beta&t=SCiV6S2Zoo1I1S7VdxWJdcFkmGRl6rCIsq7G4N89YBU"
+                    alt="">
+            </div>
+            <div class="project-item">
+                <div class="project-item-title">
+                    <p>WALLSTREET DEVOPS</p>
+                </div>
+                <img class="project-item-thumbnail"
+                    src="https://media-exp1.licdn.com/dms/image/C561BAQE1E_WcHPWicg/company-background_10000/0/1612754306236?e=2159024400&v=beta&t=SCiV6S2Zoo1I1S7VdxWJdcFkmGRl6rCIsq7G4N89YBU"
+                    alt="">
+            </div>
+        </div>
+    </section>
+    <footer class="mt-40 bg-secondary py-40">
+        <div class="container flex items-center">
+            <p class="text-gray-500 text-3xl font-secondary leading-normal">I’m always up for adventure and
+                international opportunities. Feel free to say hello via <a class="text-white font-secondary"
+                    href="mailto:rayhanprima99@gmail.com">rayhanprima99@gmail.com</a>
+            </p>
+            <div class="flex flex-col items-center">
+                <img src="https://malu.im/wp-content/uploads/2018/02/resume2-1.png" alt="">
+                <button class="button-white">DOWNLOAD CV</button>
+            </div>
+        </div>
+    </footer>
     <script>
         function handleNavMenu() {
             const navMenu = document.querySelector('#navMenu')
-            console.log(navMenu)
-            if (navMenu.classList.contains('flex')) {
+            const isActive = navMenu.classList.contains('flex')
+
+            if (isActive) {
                 navMenu.classList.remove('flex')
                 navMenu.classList.add('hidden')
             } else {
