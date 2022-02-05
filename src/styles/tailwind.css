@@ -10,7 +10,7 @@
 	}
 }
 .nav {
-	@apply container flex justify-between py-5;
+	@apply fixed top-0 left-0 w-full py-5 bg-white z-20 shadow-md;
 }
 
 .logo {
@@ -26,12 +26,16 @@
 }
 
 .project-wrapper {
-	@apply grid grid-cols-2 gap-8;
+	@apply grid grid-cols-1 md:grid-cols-2 gap-8;
 }
 
 .project-item {
 	height: 500px;
 	@apply relative overflow-hidden;
+}
+
+.project-item:nth-child(3n + 1) {
+	@apply md:col-span-2;
 }
 
 .project-item .project-item-title {
